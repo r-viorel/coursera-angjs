@@ -16,7 +16,7 @@ function SignupController(MenuService) {
         menuItemDetail = result;
         $ctrl.user.dishName = menuItemDetail.name;
         $ctrl.user.dishDesc = menuItemDetail.description;
-console.log($ctrl.user);
+
         MenuService.storeUserDetails($ctrl.user);
 
         $ctrl.menusuccess = true;
