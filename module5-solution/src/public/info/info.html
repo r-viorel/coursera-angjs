@@ -1,0 +1,20 @@
+<span ng-show="infoCtrl.showSign">
+  Not Signed Up Yet.
+  <a ui-sref="public.signup">Sign up Now!</a>
+</span>
+<div ng-hide="infoCtrl.showSign" style="margin-left:100px">
+<span>
+  Welcome {{ infoCtrl.user.firstname }} {{ infoCtrl.user.lastname }}
+  <span><br>
+  Email: {{ infoCtrl.user.email }}
+  <br>
+  <span>{{ infoCtrl.user.phone }}</span>
+  <br>
+  <span>Your Favorite dish: </span>
+  <br>
+  <div> {{ infoCtrl.user.dishName}}({{ infoCtrl.user.dish }}) : {{ infoCtrl.user.dishDesc }} </div>
+  <img class="img-responsive" height="300" ng-src="{{ infoCtrl.imageUrl }}">
+  </span>
+  <br>
+
+</div>
